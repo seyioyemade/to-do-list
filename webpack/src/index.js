@@ -1,12 +1,30 @@
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
+const ul = document.querySelector('ul');
 
-  // Lodash, now imported by this script
-  element.innerHTML = 'Hello World';
+const toDoList = [
+  {
+    description: 'wash the dishes',
+    completed: [true, false],
+    index: 0,
+  },
+  {
+    description: 'sweep the floor',
+    completed: [true, false],
+    index: 1,
+  },
+  {
+    description: 'visit the mall',
+    completed: [true, false],
+    index: 2,
+  },
+];
 
-  return element;
-}
+const loopArray = () => {
+  for (let i = 0; i < toDoList.length; i += 1) {
+    const li = `<li><div><input type="checkbox" name="check" class="checkbox"><span>${toDoList[i].description}</span></div> <i class="fas fa-ellipsis-v fa-1x"></i></li>`;
+    ul.innerHTML += li;
+  }
+};
 
-document.body.appendChild(component());
+loopArray();
