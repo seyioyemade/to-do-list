@@ -30,12 +30,16 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+div {
   padding: 20px;
 }
 
 li {
   display: flex;
   list-style: none;
+  padding: 0 20px;
 }
 
 i,
@@ -44,12 +48,33 @@ button {
   cursor: pointer;
 }
 
-.add-input {
-  border: none;
+button {
+  border: 0;
+  text-align: center;
   font-size: 18px;
 }
 
-.add-input:focus {
+i:hover,
+button:hover {
+  color: #000;
+}
+
+.fa-ellipsis-v:hover {
+  cursor: move;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.add-input {
+  border: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.add-input:focus,
+[contenteditable] {
   outline: none;
 }
 
@@ -59,18 +84,17 @@ input::placeholder {
   color: rgb(141, 141, 141);
 }
 
-button {
+.btn-div {
   padding: 20px;
-  text-align: center;
   background-color: rgb(241, 241, 241);
-  font-size: 18px;
   width: 100%;
   border-width: 0 0 0;
+  justify-content: center;
 }
 
 li,
 .add-todo,
-button {
+.btn-div {
   border-top: 1px solid #e0e0e0;
 }
 
@@ -82,4 +106,20 @@ li > div {
   margin-right: 15px;
   width: 16px;
   height: 16px;
+}
+
+form {
+  width: 85%;
+}
+
+.hide {
+  display: none;
+}
+
+.bg-color {
+  background-color: #e8e8a0;
+}
+
+span {
+  padding: 20px 360px 20px 0;
 }
