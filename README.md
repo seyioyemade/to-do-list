@@ -70,9 +70,10 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-sh
-  git clone https://github.com/seyioyemade/to-do-list.git
-  cd TO-DO-LIST
+- git clone https://github.com/seyioyemade/to-do-list.git
+- cd to-do-list
+- cd webpack
+- run npm start
 
 
 ### Install
@@ -93,7 +94,6 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Make To Do List Interactive.
 - Implement drag and drop for list items.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

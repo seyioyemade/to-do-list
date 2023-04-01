@@ -123,3 +123,8 @@ form {
 span {
   padding: 20px 360px 20px 0;
 }
+
+.checkbox-effect {
+  text-decoration: line-through;
+  color: #777;
+}
