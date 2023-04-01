@@ -2,6 +2,7 @@
 import {
   count, ul, newListInput, getCountValue,
 } from './index.js';
+import { updateItem, clearAllCompleted } from './interactive.js';
 
 export const toggleList = () => {
   const span = document.querySelectorAll('ul span');
@@ -15,8 +16,8 @@ export const toggleList = () => {
       for (let i = 0; i < siblings.length; i += 1) {
         if (siblings[i] !== item.parentElement.parentElement) {
           if (siblings[i].classList.contains('bg-color')) {
-            siblings[i].classList.remove('bg-color');
-          }
+           siblings[i].classList.remove('bg-color');
+          } 
 
           if (siblings[i].lastElementChild.firstElementChild.classList.contains('fa-trash')) {
             siblings[i].lastElementChild.firstElementChild.classList.remove('fa-trash');
@@ -92,7 +93,7 @@ export const addList = (arr) => {
   const list = {
     id: Math.floor(Math.random() * 10000000),
     description: newListInput.value,
-    completed: [false],
+    completed: false,
     index: count,
   };
 
@@ -106,4 +107,6 @@ export const addList = (arr) => {
   toggleList();
   removeList(arr);
   editList(arr);
+  updateItem(arr);
+  clearAllCompleted(arr)
 };

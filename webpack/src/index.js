@@ -3,6 +3,8 @@ import './style.css';
 import {
   addList, removeList, toggleList, editList,
 } from './add-remove.js';
+import { updateItem, clearAllCompleted } from './interactive.js';
+
 
 const toDoList = JSON.parse(localStorage.getItem('storageToDoList')) || [];
 const enterKey = document.querySelector('.enter-key');
@@ -11,7 +13,7 @@ export const ul = document.querySelector('ul');
 /*eslint-disable*/ 
 export let count;
 
-const getStorageItem = () => {
+export const displayItem = () => {
   toDoList.forEach((list) => {
     const li = `<li id = ${list.id}><div><input type="checkbox" name="check" class="checkbox"><span contenteditable="true">${list.description}</span></div><div><i class="fas fa-ellipsis-v fa-1x"></i></div></li>`;
     ul.innerHTML += li;
@@ -45,7 +47,9 @@ newListInput.addEventListener('keydown', (event) => {
 });
 
 getCountValue();
-getStorageItem();
+displayItem();
 editList(toDoList);
 removeList(toDoList);
 toggleList();
+updateItem(toDoList);
+clearAllCompleted(toDoList);
