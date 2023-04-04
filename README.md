@@ -24,36 +24,29 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [TO DO LIST] <a name="about-project"></a>
+# 📖 TO DO LIST <a name="about-project"></a>
 
-- This project is called TO-DO-LIST. It is based on an app that allows you to plan your daily schedule.
+- TO DO List is an app that allows you to plan your daily schedule.
 
-*[TO DO LIST]* is a website that is used to test the adding and removing of daily schedules.
 
 ## 🛠 Built With <a name="HTML and CSS and JS"></a>
 
 ### Tech Stack <a name="Front end (Javascript)"></a>
 
-- This is a mobile and desk-top browser responsive website.
+- This is a mobile and desktop browser responsive website.
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
-  </ul>
-  <ul>
-    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
-  </ul>
-  <ul>
-    <li><a href="https://www.w3schools.com/js/">JS</a></li>
-  </ul>
-</details>
+  Client
+  
+- HTML, CSS, JS
+- No Frameworks
+- Technologies Used- HTML, CSS, JS, GIT, Webpack, Linters (GitHub Actions, Lighthouse, Webhint, Stylelint)
 
 ### Key Features <a name="key-features"></a>
 
-- *[Webpack is used for module bundling]*
-- *[Data is stored in local storage]*
-- *[Data can be retrieved from local storage]*
+- Organise daily schedules
+- Webpack is used for module bundling
+- Data is stored in local storage
+- Data can be retrieved from local storage
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -126,7 +119,7 @@ If you like this project, please give it a star, and if you would love to tell m
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse community for giving me the guide to building this project.
+- I would like to thank [Microverse](https://www.microverse.org/) for giving this opportunity to learn.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
