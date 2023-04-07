@@ -1,7 +1,6 @@
 jest.mock('../index.js');
 
 import { testFunctions } from '../index.js';
-// import { toDoList } from '../index.js';
 
 describe('Methods for adding and removing a task', () => {
 
@@ -9,7 +8,7 @@ describe('Methods for adding and removing a task', () => {
 
     const list = {
       index: 3,
-      description: 'going to the restaurant',
+      description: 'going to the bank',
       completed: false,
     }
 
@@ -26,7 +25,7 @@ describe('Methods for adding and removing a task', () => {
       },
       {
         index: 3,
-        description: 'going to the restaurant',
+        description: 'going to the bank',
         completed: false,
       },
     ]
@@ -40,15 +39,15 @@ describe('Methods for adding and removing a task', () => {
   test('Removing a task', () => {
 
     const list = {
-      index: 1,
-      description: 'going to the restaurant',
+      index: 2,
+      description: 'reading books',
       completed: false,
     }
 
     const result = [
       {
-        index: 2,
-        description: 'reading books',
+        index: 1,
+        description: 'going to the restaurant',
         completed: false,
       },
     ]

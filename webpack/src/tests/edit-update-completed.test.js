@@ -60,7 +60,6 @@ describe('Methods for editing, updating and verifying completed task(s)', () => 
 
   });
 
-
   test('Clear all completed tasks', () => {
 
     const list = {
