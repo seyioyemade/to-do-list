@@ -1,7 +1,7 @@
 /*eslint-disable*/ 
 import {
   count, ul, newListInput, getCountValue,
-} from './index.js';
+} from '../index.js';
 import { updateItem, clearAllCompleted } from './interactive.js';
 
 export const toggleList = () => {

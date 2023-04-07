@@ -2,8 +2,8 @@ import './style.css';
 /*eslint-disable*/ 
 import {
   addList, removeList, toggleList, editList,
-} from './add-remove.js';
-import { updateItem, clearAllCompleted } from './interactive.js';
+} from './modules/add-remove.js';
+import { updateItem, clearAllCompleted } from './modules/interactive.js';
 
 
 const toDoList = JSON.parse(localStorage.getItem('storageToDoList')) || [];
